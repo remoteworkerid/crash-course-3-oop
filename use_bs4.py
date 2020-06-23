@@ -8,7 +8,7 @@ try:
         print(f'Success! Response = {response.status_code}')
         # print(f'Content {response.text}')
         soup = BeautifulSoup(response.text, features="html.parser")
-        print(f'\nHasil dari pemanggilan situs {url}')
+        print(f'Hasil Pemanggilan {url}')
         print(f'Title: {soup.title.string}')
     else:
         print(f'Woops, ada kesalahan requests {response.status_code}')
